@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   plugins: [
     {
@@ -5,8 +7,7 @@ module.exports = {
       options: {
         typeName: `ONEGRAPH`,
         fieldName: `oneGraph`,
-        url: `https://serve.onegraph.com/dynamic?app_id=0cb8b267-3cef-40c3-8878-ca010495a0ce`,
-
+        url: `https://serve.onegraph.com/dynamic?app_id=${process.env.ONEGRAPH_KEY}`
       }
     }
   ]
