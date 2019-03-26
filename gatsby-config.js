@@ -1,6 +1,7 @@
 require('dotenv').config()
 
 module.exports = {
+  pathPrefix: '/daily-reading',
   plugins: [
     {
       resolve: `gatsby-source-graphql`,
